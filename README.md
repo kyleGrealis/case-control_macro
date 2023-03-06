@@ -1,4 +1,4 @@
-/*******************************************************************************
+
 
 Author: Kyle Grealis
 email: kylegrealis@icloud.com
@@ -83,4 +83,4 @@ EXAMPLE of how to use the macro with ONLY 2 age and 1 other matching variable:
 		ratio= 2
 	);
 
-*******************************************************************************/
+
