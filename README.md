@@ -40,7 +40,7 @@ The macro program is available for matching by 2 or 3 selection criteria. The ``
 	*	```num_range```: DEFAULT value is 1. Therefore, if case age is 35, controls aged 34-36 are eligible matches. If 0 is used, matching will be done on exact numeric matching only.
 	*	```variable1```: Second matching variable (e.g.--gender)
 	*	```variable2```: Optional variable to us three total matching criteria (e.g.--ethnicity)
-	*	 	```ratio```: Select a case-control ratio. DEFAULT is 2, meaning one case to two controls.
+	*	 ```ratio```: Select a case-control ratio. DEFAULT is 2, meaning one case to two controls.
 	
 -	Highlight and Run ```%case_control_match();```
 
