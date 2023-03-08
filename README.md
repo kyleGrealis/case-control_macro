@@ -11,7 +11,7 @@
 
 **References**:
 1.  Kawabata, H., Tran, M., & Hines, P. (2004). Using SAS to match cases for case 
-				control studies. [Poster presentation]. SAS users group international 29. 
+				control studies. [Poster presentation](https://support.sas.com/resources/papers/proceedings/proceedings/sugi29/173-29.pdf). SAS users group international 29. 
 				Bristol-Myers Squibb, Princeton, New Jersey.
 2.	Mortensen, L.Q., Andresen, K., Burcharth, J., Pommergaard, H., & Rosenberg, J. 
 				(2019). Matching cases and controls using SAS software. Frontiers in big 
