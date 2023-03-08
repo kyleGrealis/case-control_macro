@@ -15,7 +15,7 @@
 				Bristol-Myers Squibb, Princeton, New Jersey.
 2.	Mortensen, L.Q., Andresen, K., Burcharth, J., Pommergaard, H., & Rosenberg, J. 
 				(2019). Matching cases and controls using SAS software. Frontiers in big 
-				data 2:4. Doi: 10.3389/fdata.2019.00004.
+				data 2:4. [Doi: 10.3389/fdata.2019.00004]([url](https://www.frontiersin.org/articles/10.3389/fdata.2019.00004/full)).
 3.	Rose, S., & Laan, M. J. (2009). Why match? Investigating matched case-control 
 				study designs with causal effect estimation. The international journal of 
 				biostatistics, 5(1), 1. https://doi.org/10.2202/1557-4679.1127
