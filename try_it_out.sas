@@ -61,38 +61,16 @@ the location of MACRO_case_control.sas and the arguments (lines 67-74).
 *******************************************************************************/
 %include "~/macro/MACRO_case_control.sas";
 
-%let folder_path=~/macro;
-%let dsn=test_set;
-%let id=Participant_ID;
-%let case_control=Event;
-%let num_var=Age;
-%let num_range=3;
-%let variable1=Gender;
-%let variable2=Ethnicity;
-%let ratio=2;
-
-
-/* %let folder_path=~/macro; */
-/* %let dsn=test_set2; */
-/* %let id=spid; */
-/* %let case_control=casecontrol; */
-/* %let num_var=age_years; */
-/* %let num_range=1; */
-/* %let variable1=r5dGender; */
-/* %let variable2=comorbidity_total; */
-/* %let ratio=2; */
-		
-
 %case_control_match(
-		folder_path= &folder_path,
-		DSN= &dsn,
-		id= &id,
-		case_control= &case_control,
-		num_var= &num_var,
-		num_range= &num_range,
-		variable1= &variable1,
-		variable2= &variable2,
-		ratio= &ratio
+		folder_path= ~/project,		/*-- be sure it matches to your folder with the dataset --*/
+		dataset= test_set,
+		id= Participant_ID,
+		case_control= Event,
+		num_var= Age,
+		num_range= 3,								/*-- age +/- 3 years --*/
+		variable1= Gender,
+		variable2= Ethnicity,				/*-- OPTIONAL VARIABLE 	--*/
+		ratio= 2										/*-- 1:2 cases to controls --*/
 	);
 
 
