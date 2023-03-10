@@ -30,26 +30,15 @@ INSTRUCTIONS:
 EXAMPLE of how to use the macro:
 
 %case_control_match(
-		folder_path= ~/project,			** REMINDER: do not use quotes here **
+		folder_path= ~/project,		/*-- be sure it matches to your folder with the dataset --*
 		dataset= test_set,
 		id= Participant_ID,
 		case_control= Event,
 		num_var= Age,
-		num_range= 1,
-		variable1= Ethnicity,
-		ratio= 2
-	);
-	
-%case_control_match(
-		folder_path= ~/project,
-		dataset= test_set,
-		id= Participant_ID,
-		case_control= Event,
-		num_var= Age,
-		num_range= 1,
-		variable1= Ethnicity,
-		variable2= Gender,
-		ratio= 2
+		num_range= 3,								/*-- age +/- 3 years --*
+		variable1= Gender,
+		variable2= Ethnicity,				/*-- OPTIONAL VARIABLE 	--*
+		ratio= 2										/*-- 1:2 cases to controls --*
 	);
 
 
