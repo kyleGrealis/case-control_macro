@@ -3,9 +3,6 @@
 Author: Kyle Grealis
 email: kylegrealis@icloud.com
 
-Affiliation: all work has been done independent of any academic affiliation. 
-	All work is my own (unless cited) and all errors are my own.
-
 Date: January 23, 2023
 Revised: March 10, 2023
 
@@ -51,10 +48,10 @@ INSTRUCTIONS:
 
 
 
--	The algorithm will search for best matches based on exact matching, then
+-	The program will search for best matches based on exact matching, then
 		by age range, if the provided age range is greater than 0.
 -	The Results window will display a sample of case-control matched dataset. 
-		The algorithm iterates 100 times and will find the dataset with the 
+		The program iterates 100 times and will find the dataset with the 
 		maximum number of sufficient case-control observations.
 -	A second dataset is created that lists all cases that have insufficient 
 		matches. For example, if the number of matched cases to controls is less than
