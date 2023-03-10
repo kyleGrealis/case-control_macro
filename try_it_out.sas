@@ -45,8 +45,8 @@ EXAMPLE of how to use the macro:
 More details are included in the MACRO_case_control.sas file. Check it out! :)
 
 *******************************************************************************
-LINE 62 will run the macro file for you. Just set the correct path to
-the location of MACRO_case_control.sas and the arguments (lines 67-74).
+LINE 51 will run the macro file for you. Just set the correct path to
+the location of MACRO_case_control.sas and the arguments (lines 53-63).
 *******************************************************************************/
 %include "~/macro/MACRO_case_control.sas";
 
