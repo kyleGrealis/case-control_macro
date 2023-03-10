@@ -7,7 +7,7 @@ Affiliation: all work has been done independent of any academic affiliation.
 	All work is my own (unless cited) and all errors are my own.
 
 Date: January 23, 2023
-Revised: February 24, 2023
+Revised: March 10, 2023
 
 References:
 1.  Kawabata, H., Tran, M., & Hines, P. (2004). Using SAS to match cases for case 
@@ -28,9 +28,7 @@ Do NOT use quotations around variable names!
 
 INSTRUCTIONS:
 -	Create a project folder.
--	Move the "test.sas7dbat” dataset into the new project folder.
--	Run the %include (line 65) with a proper direction to the folder holding
-	the MACRO_case_control.sas file.
+-	Move your dataset into the new project folder.
 -	Argument descriptions:
 	a. 	folder_path: WITHOUT QUOTES like you would using PROC IMPORT, but only
 			to the folder and not to a specific file.
