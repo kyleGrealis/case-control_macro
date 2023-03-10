@@ -6,9 +6,7 @@ Revised: March 10, 2023
 
 INSTRUCTIONS:
 -	Create a project folder.
--	Move the "test.sas7dbat” dataset into the new project folder.
--	Run the %include (line 65) with a proper direction to the folder holding
-	the MACRO_case_control.sas file.
+-	Move the "test_set.sas7dbat” dataset into the new project folder.
 -	Argument descriptions:
 	a. 	folder_path: WITHOUT QUOTES like you would using PROC IMPORT, but only
 			to the folder and not to a specific file.
@@ -44,22 +42,19 @@ EXAMPLE of how to use the macro:
 
 More details are included in the MACRO_case_control.sas file. Check it out! :)
 
-*******************************************************************************
-LINE 51 will run the macro file for you. Just set the correct path to
-the location of MACRO_case_control.sas and the arguments (lines 53-63).
-*******************************************************************************
+*******************************************************************************/
 %include "~/macro/MACRO_case_control.sas";
 
 %case_control_match(
-		folder_path= ~/project,		/*-- be sure it matches to your folder with the dataset --*
+		folder_path= ~/project,		/*-- be sure it matches to your folder with the dataset --*/
 		dataset= test_set,
 		id= Participant_ID,
 		case_control= Event,
 		num_var= Age,
-		num_range= 3,								/*-- age +/- 3 years --*
+		num_range= 3,								/*-- age +/- 3 years --*/
 		variable1= Gender,
-		variable2= Ethnicity,				/*-- OPTIONAL VARIABLE 	--*
-		ratio= 2										/*-- 1:2 cases to controls --*
+		variable2= Ethnicity,				/*-- OPTIONAL VARIABLE 	--*/
+		ratio= 2										/*-- 1:2 cases to controls --*/
 	);
 
 
