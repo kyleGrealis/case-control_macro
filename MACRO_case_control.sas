@@ -72,18 +72,20 @@ INSTRUCTIONS:
 		
 EXAMPLE of how to use the macro with ONLY 2 age and 1 other matching variable:
 %case_control_match(
-		folder_path= ~/home/project,			** REMINDER: do not use quotes here **
-		DSN= test_set,
+		folder_path= ~/project,		/*-- be sure it matches to your folder with the dataset --*
+		dataset= test_set,
 		id= Participant_ID,
 		case_control= Event,
 		num_var= Age,
-		num_range= 1,
-		variable1= Ethnicity,
-		variable2=,
-		ratio= 2
+		num_range= 3,								/*-- age +/- 3 years --*
+		variable1= Gender,
+		variable2= Ethnicity,				/*-- OPTIONAL VARIABLE 	--*
+		ratio= 2										/*-- 1:2 cases to controls --*
 	);
 
 *******************************************************************************/
+
+
 %macro declare_global_macros();
 	%global today;
 	%global best_iter;
