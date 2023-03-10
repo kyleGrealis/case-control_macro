@@ -57,7 +57,7 @@ Example of how to use the macro with ONLY 2 age and 1 other matching variable:
 
 ```
 %case_control_match(
-	folder_path= ~/home/project,
+	folder_path= ~/project,
 	DSN= test_set,
 	id= Participant_ID,
 	case_control= Event,
