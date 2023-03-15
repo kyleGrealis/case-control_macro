@@ -30,7 +30,7 @@ INSTRUCTIONS:
 	a. 	folder_path: WITHOUT QUOTES like you would using PROC IMPORT, but only
 			to the folder and not to a specific file.
 			EXAMPLE ~/home/project
-	b. 	dataset: The name of the dataset to be used.
+	b. 	DSN: The name of the dataset to be used.
 	c.	id: The variable that holds the participant ID
 	d.	case_control: The variable that will hold your case-control NUMERIC 
 			information. Be sure to code cases=1 and controls=0.
@@ -68,7 +68,7 @@ INSTRUCTIONS:
 EXAMPLE of how to use the macro with ONLY 2 age and 1 other matching variable:
 %case_control_match(
 		folder_path= ~/project,		/*-- be sure it matches to your folder with the dataset --*
-		dataset= test_set,
+		DSN= test_set,
 		id= Participant_ID,
 		case_control= Event,
 		num_var= Age,
@@ -117,7 +117,7 @@ EXAMPLE of how to use the macro with ONLY 2 age and 1 other matching variable:
 	Create a dataset to use for the macro without overwriting original dataset
 	*******************************************************************************;
 	data working_set;
-		set project.&dataset;
+		set project.&DSN;
 	run;
 	
 	*******************************************************************************
