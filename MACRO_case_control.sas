@@ -117,7 +117,7 @@ EXAMPLE of how to use the macro with ONLY 2 age and 1 other matching variable:
 	Create a dataset to use for the macro without overwriting original dataset
 	*******************************************************************************;
 	data working_set;
-		set project.&DSN;
+		set project.&dataset;
 	run;
 	
 	*******************************************************************************
