@@ -211,18 +211,8 @@ EXAMPLE of how to use the macro with ONLY 2 age and 1 other matching variable:
 	* now merge the counts back into the dataset; 
 	data merged_grouping_avail;
 		merge grouping_matches
-					cases_and_avail_matches;
+		cases_and_avail_matches;
 		by case_id;
-	run;
-		
-	* now order the rows to select the first matching control; 
-	proc sort data=merged_grouping_avail;
-		by control_id available_controls random_num;
-	run;
-	data take_first_controls; 
-		set merged_grouping_avail;
-		by control_id;
-		if first.control_id; 
 	run;
 %mend count_and_first_match;
 
