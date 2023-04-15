@@ -56,7 +56,3 @@ More details are included in the MACRO_case_control.sas file. Check it out! :)
 		variable2= Ethnicity,				/*-- OPTIONAL VARIABLE 	--*/
 		ratio= 2										/*-- 1:2 cases to controls --*/
 	);
-
-
-
-	
